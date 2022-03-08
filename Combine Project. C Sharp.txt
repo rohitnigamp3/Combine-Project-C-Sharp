@@ -1,0 +1,561 @@
+using System;
+using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace cobine_program
+    
+{
+    public class PQR
+    {
+        public void Addtion()
+        {
+            int a, b, c, d, e, f, g;
+            a = 100;
+            b = 200;
+            c = 300;
+            d = 400;
+            e = 500;
+            {
+                int z = a + b + c + a * d * e / 50;
+                Console.WriteLine(z);
+            }
+        }
+        public void controlstatement()
+        {
+            int a = 50; int b = 20;
+            if (a >= b)
+            {
+                Console.WriteLine("a is greatter than b");
+            }
+            else if (a <= b)
+            {
+                Console.WriteLine("a is less than b");
+            }
+            else
+            {
+                Console.WriteLine("a equal to b");
+            }
+        }
+        public void result()
+        {
+            int mark = 95;
+            if (mark >= 95 && mark <= 100)
+            {
+                Console.WriteLine("Topper");
+            }
+            else if (mark >= 80 && mark <= 100)
+            {
+                Console.WriteLine("First Devision");
+            }
+            else if (mark >= 60 && mark <= 100)
+            {
+                Console.WriteLine("Second Devision");
+            }
+            else if (mark >= 50 && mark <= 100)
+            {
+                Console.WriteLine("Third Devision");
+            }
+            else
+            {
+                Console.WriteLine("Fail");
+            }
+        }
+        public void oddnumber()
+        {
+            for (int i = 1; i <= 50; i++)
+            {  
+                if (i % 2 == 1)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+        public void singnalbreack(string color)
+        {
+            switch (color)
+            {
+                case "Red":
+                    Console.WriteLine("Stop");
+                    break;
+                case "Green":
+                    Console.WriteLine("Go");
+                    break;
+                case "Yello":
+                    Console.WriteLine("Wait");
+                    break;
+                default:
+                    {
+                        Console.WriteLine("singnal out of oder");
+                        break;
+                    }
+
+            }
+        }
+        public void Greadresult(string Gread)
+        {
+            switch (Gread)
+            {
+                case "A":
+                    Console.WriteLine("First Devision");
+                    break;
+                case "B":
+                    Console.WriteLine("Second Devision");
+                    break;
+                case "C":
+                    Console.WriteLine("Third Devision");
+                    break;
+                default:
+                    Console.WriteLine("Fail");
+                    break;
+
+            }
+        }
+        public void loop()
+        {
+            for (int a = 1; a < 20; a++)
+            {
+                for (int q = a; q < 20; q++)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 1; j < a; j++)
+                {
+                    Console.Write("*");
+                    Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
+            for (int r = 20; r > 1; r--)
+            {
+                for (int p = r; p < 20; p++)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 1; j < r; j++)
+                {
+                    Console.Write("*");
+                    Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
+        }
+        public void Dil()
+        {
+            for (int a = 0; a <= 2; a++)
+            {
+                for (int b = 1; b <= 17; b++)
+                {
+                    if ((b >= 3 - a && b <= 6 + a) || (b >= 12 - a && b <= 15 + a))
+                        Console.Write("*");
+                    else
+                        Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 1; j <= 17; j++)
+                {
+                    if (j >= i + 1 && j <= 17 - i)
+                        Console.Write("*");
+                    else
+                        Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
+        }
+        public void loop1()
+        {
+            for (int y = 1; y <= 30; y++)
+            {
+                if (y == 11 || y == 10 || y == 18)
+                {
+                    continue;
+                }
+                Console.WriteLine(y);
+            }
+        }
+        public void loop2()
+        {
+            for (int i = 1; i <= 20; i++)
+            {
+                if (i == 10)
+                {
+                    break;
+                }
+                Console.WriteLine(i);
+            }
+        }
+        public void loop3()
+        {
+            int i = 1;
+            while (i <= 5)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
+
+        }
+        public void loop4()
+        {
+            int i = 1;
+            do
+            {
+                Console.WriteLine(i);
+                i++;
+            } 
+            while (i <= 20);
+        }
+        public void arraylist()
+        {
+            string[] arr = { " Prem Jaiswal sir ", " Prem Maurya sir ", " Rohit Nigam ", " Pravin G ", "Bablu F ", " Dipak G ", "Prashant G ", "Anand G " };
+            for (int i = 3; i <= arr.Length - 1; i++)
+            {
+                Console.Write(arr[2]);
+
+            }
+        }
+        public void arraycontenar()
+        {
+            string[] arr = { " Prem Jaiswal sir ", " Prem Maurya sir ", " Rohit Nigam ", " Pravin G ", " Bablu F ", " Dipak G ", "Prashant G ", "Anand G " };
+
+            {
+                foreach (string a in arr)
+                    Console.WriteLine(a);
+            }
+        }
+        public void arr1()
+        {
+            int[] goodboy = new int[] { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
+            string[] baby = new string[] { " Prem Jaiswal sir ", " Prem Maurya sir ", " Rohit Nigam ", " Pravin G ", " Bablu F ", " Dipak G ", "Prashant G ", "Anand G " };
+            char[] Raunak = new char[] { 'A', 'B', 'C', 'D', 'E', 'F' };
+            double[] Rohit = new double[] { 10.5d, 20.6d, 30.7d, 50.5d, 40.3d, 70.9d };
+            float[] sk = new float[] { 10.5f, 50.5f, 30.1f, 60.1f, 40.5f };
+            Console.WriteLine(goodboy[1]);
+            Console.WriteLine(baby[2]);
+            Console.WriteLine(Raunak[3]);
+            Console.WriteLine(Rohit[4]);
+            Console.WriteLine(sk);
+            {
+                foreach (int a in goodboy)
+                {
+                    Console.WriteLine(a);
+                }
+                {
+                    foreach (string b in baby)
+                    {
+                        Console.WriteLine(b);
+                    }
+                }
+                {
+                    foreach (char c in Raunak)
+                    {
+                        Console.WriteLine(c);
+                    }
+                }
+                {
+                    foreach (double d in Rohit)
+                    {
+                        Console.WriteLine(d);
+                    }
+                }
+                {
+                    foreach (float e in sk)
+                    {
+                        Console.WriteLine(e);
+                    }
+                }
+            }
+        }
+    }
+    public class hello
+    {
+        public string Name;
+        public string Address;
+        public string Email;
+        public int ID;
+        public void employeedetails()
+        {
+            string details = Address + Email + ID;
+            Console.WriteLine(details);
+        }
+    }
+    public class non : hello
+    {
+        public int soga = 64;
+    }
+    public class dfg : hello
+    {
+        public void dh()
+        {
+            var AB = new ArrayList() { 365, "GH", 0.252 };
+        }
+    }
+    public class raj
+    {
+        int a;
+        int b;
+        public raj(int d, int v)
+        {
+            a = d;
+            b = v;
+        }
+        public void add()
+        {
+            Console.WriteLine(a + b);
+        }
+
+    }
+    public class ssd
+    {
+        int a;
+        int b;
+        public ssd(int d, int f)
+        {
+            a = d;
+            b = f;
+        }
+        public void multiply()
+        {
+            int c = a * b / 20;
+            Console.WriteLine(c);
+        }
+    }
+    public class shitl
+    {
+        int a;
+        int b;
+        public void add()
+        {
+            a = 12;
+            b = 20;
+            int c = a * b;
+            Console.WriteLine(c);
+        }
+    }
+    public class dk
+    {
+        public string Name;
+        public string Address;
+        public string Email;
+        public int Id;
+        public void Employee()
+        {
+            string details = Name + Address + Email;
+            Console.WriteLine(details);
+        }
+    }
+    public class qrt : dk
+    {
+        public void pontname()
+        {
+            Console.WriteLine("p");
+        }
+    }
+    public class raju
+    {
+        public void num(int x, int y, int z)
+        {
+            Console.WriteLine(x + y + z);
+        }
+        public void raj(float x, float y)
+        {
+            Console.WriteLine(x + y);
+        }
+    }
+    public class phone
+    {
+        public void call()
+        {
+            Console.WriteLine("Rohit");
+        }
+    }
+    public class koll : phone
+    {
+        public void holl()
+        {
+            Console.WriteLine("Pravin");
+        }
+    }
+    public abstract class day
+    {
+        public string Name;
+        public string Address;
+        public string Email;
+        public int salary;
+        public int Id;
+        public abstract void anualsalary();
+        public virtual void details()
+        {
+            Console.WriteLine(Name + Address + Email);
+        }
+    }
+    public class Permanent : day
+    {
+        public override void anualsalary()
+        {
+            int anualsalary = salary * 12 + (salary * 12 * 20 / 100);
+            Console.WriteLine(Name + Address + Email);
+            Console.WriteLine("anualsalary---->" + anualsalary);
+        }
+    }
+    public class Temprary : day
+    {
+        public override void anualsalary()
+        {
+            int anualsalary = salary * 12 + (salary * 12 * 15 / 100);
+            Console.WriteLine(Name + Address + Email);
+            Console.WriteLine("anualsalary---->" + anualsalary);
+        }
+    }
+    public class Conract : day
+    {
+        public override void anualsalary()
+        {
+            int anualsalary = salary * 12 + (salary * 12 * 5 / 100);
+            Console.WriteLine(Name + Address + Email);
+            Console.WriteLine("anualsalary---->" + anualsalary);
+        }
+    }
+    public class Employee : day
+    {
+        public override void anualsalary()
+        {
+            int anualsalary = salary * 12 + (salary * 12 * 10 / 100);
+            Console.WriteLine(Name + Address + Email);
+            Console.WriteLine("anualsalary---->" + anualsalary);
+        }
+    }
+    public class mbkip
+    {
+        public int Id { get; set; }
+        public string  Name { get; set; }
+        public string Address { get; set; }
+        public int salary { get; set; }
+        public int bankbalance
+        { 
+            get
+            {
+                return bankbalance;
+            } 
+            set
+            {
+                if (bankbalance >1500)
+                {
+                    bankbalance = value;
+                }
+            }
+        }
+        public int anualsalary { get { return salary * 12; } }
+        public void details()
+        {
+            string c = " Hello " + Name;
+            Console.WriteLine(c);
+            string xy = "This is anualsalary---->" + anualsalary;
+            Console.WriteLine(xy);
+            string address = "This is your address";
+            Console.WriteLine(address);
+        }
+    }
+    public class year
+    {
+        public void leapyear()
+        {
+           
+              Console .WriteLine ("Enter a four digit year: ");
+         int   year = Convert.ToInt32(Console .ReadLine ());
+          
+                if (year %400==0 || year%4==0)
+                {
+                    Console .WriteLine ("Yes it is a Leap year");
+                }
+                else
+                {
+                   Console .WriteLine (" No it is not a Leap year");
+                }
+        }
+
+    }
+    public class addtion
+    {
+        int a;
+        int b;
+        private int id;
+        public void addtwo()
+        {
+            Console.WriteLine(a + b);
+        }
+        public void set(int a)
+        {
+            id  = a;
+        }
+        public int get()
+        {
+            return id;
+        }
+    }
+    public class addition
+    {
+        public string Name { get; set; }
+        public int nullbalance = 600;
+        public int mybalance
+        {
+            get
+            {
+                if (nullbalance > 500)
+                {
+                    return nullbalance;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            set
+            {
+                if(value >500)
+                {
+                    nullbalance = nullbalance + value;
+                }
+                else
+                {
+                    nullbalance = value;
+                }
+            }
+        }
+           
+    }
+    public class Employee2
+    {
+        string firstName;
+        string lastName;
+        int salary;
+        public string FirstName
+        {
+            get { return firstName; }
+            set { firstName  = value;  }
+        } 
+        public string LastName
+        {
+            get { return lastName; }
+            set { lastName = value; }
+        }
+        public int Salary
+        {
+            get { return salary; }
+            set { salary = value; }
+        }
+        public string FullName
+        {
+            get { return firstName + " " + lastName; }
+        }
+        public int Anualsalary
+        {
+            get { return Salary * 12; }
+        }
+    }
+   
+}
